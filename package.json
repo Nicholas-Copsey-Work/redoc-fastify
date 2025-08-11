@@ -15,9 +15,19 @@
   },
   "license": "MIT",
   "author": "Nicholas-Copsey",
-  "type": "module",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-module": "tsc",
+    "build-tests": "tsc",
+    "tests": "node ./tests/index.js"
+  },
+  "dependencies": {
+    "fastify": "^5.4.0",
+    "fs": "^0.0.1-security",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1"
   }
 }
