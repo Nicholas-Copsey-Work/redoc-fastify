@@ -1,0 +1,23 @@
+{
+  "name": "redoc-fastify",
+  "version": "1.0.0",
+  "description": "Redoc fastify endpoints",
+  "keywords": [
+    "fastify"
+  ],
+  "homepage": "https://github.com/Nicholas-Copsey-Work/redoc-fastify#readme",
+  "bugs": {
+    "url": "https://github.com/Nicholas-Copsey-Work/redoc-fastify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicholas-Copsey-Work/redoc-fastify.git"
+  },
+  "license": "MIT",
+  "author": "Nicholas-Copsey",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
