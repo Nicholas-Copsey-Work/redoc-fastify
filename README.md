@@ -38,8 +38,7 @@ $ npm i
 ## Build
 
 ```bash
-$ npm run build-tests
-$ npm run tests
+$ npm run build-module
 ```
 
 ## Test
