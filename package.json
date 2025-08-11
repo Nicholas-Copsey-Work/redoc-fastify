@@ -19,7 +19,7 @@
   "main": "index.js",
   "scripts": {
     "build-module": "tsc",
-    "build-tests": "tsc",
+    "build-tests": "tsc --build tsconfig-tests.json",
     "tests": "node ./tests/index.js"
   },
   "dependencies": {

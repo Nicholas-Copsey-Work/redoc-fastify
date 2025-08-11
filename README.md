@@ -29,3 +29,24 @@ async function main(...) {
 
 # Development
 
+## Install
+
+```bash
+$ npm i
+```
+
+## Build
+
+```bash
+$ npm run build-tests
+$ npm run tests
+```
+
+## Test
+
+```bash
+$ npm run build-tests
+$ npm run tests
+```
+
+Go to `http://localhost:3000/` to see changes
