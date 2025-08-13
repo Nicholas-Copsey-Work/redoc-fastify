@@ -1,6 +1,6 @@
 {
   "name": "redoc-fastify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redoc fastify endpoints",
   "keywords": [
     "fastify"
@@ -15,12 +15,15 @@
   },
   "license": "MIT",
   "author": "Nicholas-Copsey",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build-module": "tsc",
     "build-tests": "tsc --build tsconfig-tests.json",
-    "tests": "node ./tests/index.js"
+    "test": "node ./tests/index.js"
   },
   "dependencies": {
     "fastify": "^5.4.0",

@@ -4,16 +4,16 @@ import fs from 'fs/promises';
 export interface IOptions {
     title: string
     spec_url: string
-    file_path: string
+    file_path?: string
     nonce?: string,
     redocOptions?: object
 }
 
-export default ({
+const RedocFastify = ({
     title = 'ReDoc',
     spec_url = "http://petstore.swagger.io/v2/swagger.json",
     file_path = spec_url
-}: IOptions) => {
+}: IOptions = { title: 'ReDoc', spec_url: "http://petstore.swagger.io/v2/swagger.json"}) => {
     const opts: IOptions = { title, spec_url, file_path };
     const formattedHTML = formatHTML(opts);
     return {
@@ -73,3 +73,5 @@ const htmlTemplate = `<!DOCTYPE html>
     );
   </script>
 </html>`;
+
+export default RedocFastify;
